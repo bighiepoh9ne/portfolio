@@ -10,7 +10,7 @@ function Navbar() {
   const navItems = [
     { path: "/about", label: "À propos" },
     { path: "/parcours", label: "Parcours" },
-    { path: "/experience", label: "Compétence" },
+    { path: "/skills", label: "Compétence" },
     { path: "/experience", label: "Expérience" },
     { path: "/projects", label: "Projets" },
     { path: "/contact", label: "Contact" }

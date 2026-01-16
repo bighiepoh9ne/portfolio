@@ -85,6 +85,31 @@ function About() {
             >
               {showMore ? "Afficher moins ↑" : "Afficher plus ↓"}
             </motion.button>
+
+            <motion.div
+              className="about-buttons"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1 }}
+            >
+              <a
+                href="https://github.com/akikmane"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn github-btn"
+              >
+                <span className="btn-icon">GH</span>
+                Mon GitHub
+              </a>
+              <a
+                href="/Cv.pdf"
+                download="CV_Cephas_AKIKMANE.pdf"
+                className="btn cv-btn"
+              >
+                <span className="btn-icon">CV</span>
+                Télécharger CV
+              </a>
+            </motion.div>
           </motion.div>
         </motion.section>
 

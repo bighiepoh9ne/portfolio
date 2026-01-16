@@ -53,8 +53,8 @@ function Contact() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <h3>📧 Email</h3>
-              <p>votre.email@example.com</p>
+              <h3>Email</h3>
+              <p>contact@akikmane.dev</p>
             </motion.div>
 
             <motion.div
@@ -63,8 +63,8 @@ function Contact() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <h3>📱 Téléphone</h3>
-              <p>+33 6 XX XX XX XX</p>
+              <h3>Téléphone</h3>
+              <p>+33 6 12 34 56 78</p>
             </motion.div>
 
             <motion.div
@@ -73,7 +73,7 @@ function Contact() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              <h3>📍 Localisation</h3>
+              <h3>Localisation</h3>
               <p>Île-de-France, France</p>
             </motion.div>
 
@@ -83,10 +83,10 @@ function Contact() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              <h3>🔗 Réseaux</h3>
+              <h3>Réseaux</h3>
               <div style={{ display: 'flex', gap: '15px', marginTop: '10px' }}>
                 <a
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/in/akikmane"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: '#00d4ff', textDecoration: 'none' }}
@@ -94,7 +94,7 @@ function Contact() {
                   LinkedIn
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/akikmane"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: '#00d4ff', textDecoration: 'none' }}
