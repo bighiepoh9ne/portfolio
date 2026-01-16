@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
+import logoImage from "../data/Logo.png"
 
 function Hero() {
   return (
@@ -10,14 +11,25 @@ function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <motion.div
-          className="availability-badge"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          À la recherche d'un stage ou d'une alternance
-        </motion.div>
+        <Link to="/contact">
+          <motion.div
+            className="availability-badge"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ 
+              opacity: [1, 0.6, 1],
+              scale: [1, 1.05, 1]
+            }}
+            transition={{ 
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+            whileHover={{ scale: 1.1 }}
+            style={{ cursor: 'pointer' }}
+          >
+            À la recherche d'un stage ou d'une alternance
+          </motion.div>
+        </Link>
 
         <motion.h1
           className="hero-title"
@@ -120,27 +132,15 @@ function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
             >
-              <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="40" cy="25" r="8" fill="white" />
-                <circle cx="40" cy="55" r="8" fill="white" />
-                <circle cx="25" cy="40" r="6" fill="white" opacity="0.8" />
-                <circle cx="55" cy="40" r="6" fill="white" opacity="0.8" />
-                <line x1="40" y1="33" x2="40" y2="47" stroke="white" strokeWidth="3" strokeLinecap="round" />
-                <line x1="33" y1="40" x2="47" y2="40" stroke="white" strokeWidth="3" strokeLinecap="round" />
-              </svg>
-            </motion.div>
-
-            <motion.div
-              className="blob-text"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.2 }}
-            >
-              <svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fill="white" fontSize="48" fontWeight="bold" fontFamily="Arial, sans-serif" letterSpacing="8">
-                  AAC
-                </text>
-              </svg>
+              <img 
+                src={logoImage} 
+                alt="AAC Logo" 
+                style={{ 
+                  width: '200px', 
+                  height: 'auto',
+                  filter: 'brightness(0) invert(1)'
+                }} 
+              />
             </motion.div>
           </div>
         </div>

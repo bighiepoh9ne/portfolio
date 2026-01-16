@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Navbar from "./components/Navbar"
+import StarryBackground from "./components/StarryBackground"
 
 import Home from "./pages/Home"
 import About from "./pages/About"
@@ -11,6 +12,7 @@ import Contact from "./pages/Contact"
 function App() {
   return (
     <BrowserRouter>
+      <StarryBackground />
       <Navbar />
 
       <Routes>

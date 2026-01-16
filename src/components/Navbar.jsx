@@ -1,41 +1,105 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import { motion } from "framer-motion"
+import { useState } from "react"
+import logoImage from "../data/Logo.png"
 
 function Navbar() {
+  const location = useLocation()
+  const [hoveredLink, setHoveredLink] = useState(null)
+
+  const navItems = [
+    { path: "/about", label: "À propos" },
+    { path: "/parcours", label: "Parcours" },
+    { path: "/experience", label: "Compétence" },
+    { path: "/experience", label: "Expérience" },
+    { path: "/projects", label: "Projets" },
+    { path: "/contact", label: "Contact" }
+  ]
+
   return (
     <motion.nav
       className="navbar"
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <motion.div
-        className="logo"
-        whileHover={{ scale: 1.05 }}
-      >
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 5L5 15L20 25L35 15L20 5Z" fill="url(#gradient1)" />
-          <path d="M20 25L5 35L20 45L35 35L20 25Z" fill="url(#gradient2)" opacity="0.7" />
-          <defs>
-            <linearGradient id="gradient1" x1="5" y1="5" x2="35" y2="25" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#00d4ff" />
-              <stop offset="1" stopColor="#0891b2" />
-            </linearGradient>
-            <linearGradient id="gradient2" x1="5" y1="25" x2="35" y2="45" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#0891b2" />
-              <stop offset="1" stopColor="#164e63" />
-            </linearGradient>
-          </defs>
-        </svg>
-        <span className="logo-text">AAC</span>
-      </motion.div>
+      <Link to="/">
+        <motion.div
+          className="logo"
+          whileHover={{ 
+            scale: 1.1,
+            rotate: [0, -5, 5, -5, 0],
+            transition: { duration: 0.5 }
+          }}
+          whileTap={{ scale: 0.95 }}
+          animate={{
+            y: [0, -5, 0],
+          }}
+          transition={{
+            y: {
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }
+          }}
+        >
+          <img 
+            src={logoImage} 
+            alt="AAC Logo" 
+            style={{ 
+              width: '40px', 
+              height: 'auto'
+            }} 
+          />
+        </motion.div>
+      </Link>
 
       <ul className="nav-links">
-        <li><Link to="/about">À propos</Link></li>
-        <li><Link to="/parcours">Parcours</Link></li>
-        <li><Link to="/experience">Expérience</Link></li>
-        <li><Link to="/projects">Projets</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+        {navItems.map((item, index) => (
+          <motion.li
+            key={`${item.path}-${index}`}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 * index, duration: 0.5 }}
+            onMouseEnter={() => setHoveredLink(`${item.path}-${index}`)}
+            onMouseLeave={() => setHoveredLink(null)}
+          >
+            <Link to={item.path}>
+              <motion.span
+                whileHover={{ 
+                  scale: 1.1,
+                  color: "#00d4ff"
+                }}
+                animate={{
+                  y: hoveredLink === `${item.path}-${index}` ? -3 : 0,
+                }}
+                transition={{ duration: 0.2 }}
+                style={{
+                  position: 'relative',
+                  display: 'inline-block'
+                }}
+              >
+                {item.label}
+                {location.pathname === item.path && (
+                  <motion.div
+                    layoutId="activeIndicator"
+                    style={{
+                      position: 'absolute',
+                      bottom: -5,
+                      left: 0,
+                      right: 0,
+                      height: 2,
+                      background: 'linear-gradient(90deg, #00d4ff, #0891b2)',
+                      borderRadius: 2
+                    }}
+                    initial={false}
+                    transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                  />
+                )}
+              </motion.span>
+            </Link>
+          </motion.li>
+        ))}
       </ul>
     </motion.nav>
   )

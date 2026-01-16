@@ -36,11 +36,83 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background: #000000;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(2px 2px at 20% 30%, white, transparent),
+    radial-gradient(2px 2px at 60% 70%, white, transparent),
+    radial-gradient(1px 1px at 50% 50%, white, transparent),
+    radial-gradient(1px 1px at 80% 10%, white, transparent),
+    radial-gradient(2px 2px at 90% 60%, white, transparent),
+    radial-gradient(1px 1px at 33% 80%, white, transparent),
+    radial-gradient(2px 2px at 15% 90%, white, transparent),
+    radial-gradient(1px 1px at 70% 20%, white, transparent),
+    radial-gradient(1px 1px at 40% 40%, white, transparent),
+    radial-gradient(2px 2px at 25% 60%, white, transparent);
+  background-size: 200% 200%;
+  animation: starfield 200s linear infinite;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(8, 145, 178, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(14, 116, 144, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(22, 78, 99, 0.08) 0%, transparent 50%);
+  animation: nebula 30s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes starfield {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes nebula {
+  0%, 100% {
+    background: 
+      radial-gradient(circle at 20% 50%, rgba(8, 145, 178, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(14, 116, 144, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, rgba(22, 78, 99, 0.08) 0%, transparent 50%);
+  }
+  33% {
+    background: 
+      radial-gradient(circle at 70% 30%, rgba(8, 145, 178, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 30% 70%, rgba(14, 116, 144, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 60% 60%, rgba(22, 78, 99, 0.08) 0%, transparent 50%);
+  }
+  66% {
+    background: 
+      radial-gradient(circle at 50% 80%, rgba(8, 145, 178, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 20% 20%, rgba(14, 116, 144, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 40%, rgba(22, 78, 99, 0.08) 0%, transparent 50%);
+  }
 }
 
 #root {
   width: 100%;
   min-height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
 h1 {
@@ -72,8 +144,8 @@ button:focus-visible {
   top: 0;
   width: 100%;
   z-index: 1000;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   padding: 20px 60px;
   background: rgba(0, 0, 0, 0.8);
@@ -104,6 +176,7 @@ button:focus-visible {
   list-style: none;
   display: flex;
   gap: 20px;
+  justify-content: center;
 }
 
 .nav-links a {
@@ -617,6 +690,196 @@ button:focus-visible {
   min-height: 120px;
 }
 
+.about-hero {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
+  padding: 40px 0;
+}
+
+.about-photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 10px 40px rgba(0, 212, 255, 0.3);
+}
+
+.about-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.about-title .highlight {
+  background: linear-gradient(90deg, #00d4ff 0%, #0891b2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-description {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 15px;
+}
+
+.show-more-btn {
+  align-self: flex-start;
+  padding: 12px 28px;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.show-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.4);
+}
+
+.stats-section {
+  margin-bottom: 80px;
+}
+
+.section-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.stat-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 40px 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.stat-card .stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.stat-card .stat-label {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.skills-section-about {
+  margin-bottom: 80px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 20px 25px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.skill-icon-text {
+  font-size: 1.8rem;
+}
+
+.skill-name-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  flex: 1;
+}
+
+.skill-percentage {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.skill-bar-container {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 10px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -691,6 +954,20 @@ html {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .show-more-btn {
+    align-self: center;
   }
 }
 
