@@ -7,7 +7,7 @@ function Parcours() {
   const parcours = [
     {
       id: 1,
-      year: "2024 - Présent",
+      year: "2025 - Présent",
       title: "Licence Professionnelle Datamining",
       institution: "Université Gustave Eiffel, Champs-sur-Marne",
       summary: "Formation spécialisée en analyse de données, machine learning et visualisation.",

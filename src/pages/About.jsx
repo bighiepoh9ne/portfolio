@@ -41,7 +41,7 @@ function About() {
               À propos de <span className="highlight">moi</span>
             </h1>
             <p className="about-description">
-              Étudiant passionné en Licence Professionnelle de Datamining à l'université Gustave Eiffel, 
+              Je m'appelle AKIKMANE ALLOGO Cephas, étudiant passionné en Licence Professionnelle de Datamining à l'université Gustave Eiffel, 
               je me spécialise dans l'analyse et la transformation des données en insights stratégiques. 
               Mon parcours académique et mes expériences pratiques m'ont permis de développer une expertise 
               solide en manipulation de données, visualisation et modélisation prédictive.
@@ -98,7 +98,7 @@ function About() {
                 rel="noopener noreferrer"
                 className="btn github-btn"
               >
-                <span className="btn-icon">GH</span>
+                <span className="btn-icon"></span>
                 Mon GitHub
               </a>
               <a
@@ -106,8 +106,8 @@ function About() {
                 download="CV_Cephas_AKIKMANE.pdf"
                 className="btn cv-btn"
               >
-                <span className="btn-icon">CV</span>
-                Télécharger CV
+                <span className="btn-icon"></span>
+                Mon CV
               </a>
             </motion.div>
           </motion.div>
