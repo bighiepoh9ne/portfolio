@@ -1,44 +1,37 @@
 export const projects = [
   {
-    title: "Dashboard Analytics Interactif",
-    description: "Tableau de bord complet pour l'analyse des ventes avec visualisations dynamiques et KPIs en temps réel.",
-    tech: ["Power BI", "SQL", "DAX"],
-    github: "https://github.com/username/dashboard-analytics",
-    demo: "https://demo-dashboard.com"
+    title: "Projet de classification",
+    description: "Projet d'analyse de classification utilisant Excel pour la manipulation des données et R pour les modèles statistiques avancés.",
+    tech: ["Excel", "R"],
+    github: "https://github.com/bighiepoh9ne/Projet-de-classification",
+    demo: "https://github.com/bighiepoh9ne/Projet-de-classification"
   },
   {
-    title: "Modèle de Prédiction Client",
-    description: "Algorithme de machine learning pour prédire le churn client utilisant Python et Scikit-learn.",
-    tech: ["Python", "Scikit-learn", "Pandas", "Jupyter"],
-    github: "https://github.com/username/customer-churn-prediction",
-    demo: "https://colab.research.google.com/drive/..."
+    title: "Projet de finance Power BI",
+    description: "Tableau de bord financier interactif créé avec Power BI, utilisant Excel comme source de données et DAX pour les calculs complexes.",
+    tech: ["Excel", "Power BI", "DAX"],
+    github: "https://github.com/bighiepoh9ne/Projet-de-finance-Power-BI",
+    demo: "https://github.com/bighiepoh9ne/Projet-de-finance-Power-BI"
   },
   {
-    title: "Application de Visualisation de Données",
-    description: "Application web interactive pour explorer et analyser des datasets complexes avec graphiques personnalisables.",
-    tech: ["React", "D3.js", "Node.js", "MongoDB"],
-    github: "https://github.com/username/data-viz-app",
-    demo: "https://data-viz-app.herokuapp.com"
+    title: "Projet Macroéconomique Ministère des finances",
+    description: "Outil d'analyse macroéconomique développé pour le Ministère des finances, utilisant Excel et VBA pour automatiser les rapports et analyses.",
+    tech: ["Excel", "VBA"],
+    github: "https://github.com/bighiepoh9ne/Projet-macroeconomique-Ministere-des-finances",
+    demo: "https://github.com/bighiepoh9ne/Projet-macroeconomique-Ministere-des-finances"
   },
   {
-    title: "Système d'Analyse Financière",
-    description: "Outil automatisé pour l'analyse de portefeuilles financiers avec rapports Excel avancés.",
-    tech: ["Excel", "VBA", "Python", "OpenPyXL"],
-    github: "https://github.com/username/financial-analysis-tool",
-    demo: "https://github.com/username/financial-analysis-tool/releases"
+    title: "Projet sur les données de la NBA",
+    description: "Analyse approfondie des données de la NBA utilisant Python pour explorer les statistiques des joueurs et des équipes.",
+    tech: ["Python"],
+    github: "https://github.com/bighiepoh9ne/Projet-python-sur-les-donnees-NBA",
+    demo: "https://github.com/bighiepoh9ne/Projet-python-sur-les-donnees-NBA"
   },
   {
-    title: "Pipeline ETL pour Big Data",
-    description: "Pipeline complet d'extraction, transformation et chargement pour traiter de gros volumes de données.",
-    tech: ["Python", "Apache Spark", "PostgreSQL", "Docker"],
-    github: "https://github.com/username/etl-pipeline",
-    demo: "https://github.com/username/etl-pipeline#readme"
-  },
-  {
-    title: "Application de Recommandation",
-    description: "Système de recommandation basé sur le machine learning pour personnaliser l'expérience utilisateur.",
-    tech: ["Python", "TensorFlow", "Flask", "Redis"],
-    github: "https://github.com/username/recommendation-engine",
-    demo: "https://recommendation-demo.com"
+    title: "Projet de statistique",
+    description: "Étude statistique complète utilisant R pour analyser des datasets et produire des insights significatifs.",
+    tech: ["R"],
+    github: "https://github.com/bighiepoh9ne/Projet-de-statistique",
+    demo: "https://github.com/bighiepoh9ne/Projet-de-statistique"
   }
 ];

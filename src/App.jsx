@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 import StarryBackground from "./components/StarryBackground"
 
 import Home from "./pages/Home"
@@ -25,6 +26,8 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
+      <Footer />
     </BrowserRouter>
   )
 }

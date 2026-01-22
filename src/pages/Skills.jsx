@@ -265,13 +265,6 @@ function Skills() {
                     >
                       <div className="skill-icon">{skill.icon}</div>
                       <h3>{skill.name}</h3>
-                      <div className="skill-level-bar">
-                        <div
-                          className="level-fill"
-                          style={{ width: `${skill.level}%` }}
-                        />
-                      </div>
-                      <p>{skill.level}%</p>
                     </motion.div>
                   ))}
                 </div>

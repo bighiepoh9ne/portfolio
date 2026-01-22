@@ -54,7 +54,7 @@ function Contact() {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <h3>Email</h3>
-              <p>contact@akikmane.dev</p>
+              <p>cephasallogo@gmail.com</p>
             </motion.div>
 
             <motion.div
@@ -64,7 +64,7 @@ function Contact() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <h3>Téléphone</h3>
-              <p>+33 6 12 34 56 78</p>
+              <p>+33 7 46 51 08 28</p>
             </motion.div>
 
             <motion.div
@@ -94,7 +94,7 @@ function Contact() {
                   LinkedIn
                 </a>
                 <a
-                  href="https://github.com/akikmane"
+                  href="https://github.com/bighiepoh9ne"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: '#00d4ff', textDecoration: 'none' }}

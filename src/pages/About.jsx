@@ -7,8 +7,7 @@ function About() {
 
   const stats = [
     { number: "3+", label: "Années d'expérience" },
-    { number: "50+", label: "Projets réalisés" },
-    { number: "100%", label: "Satisfaction client" }
+    { number: "5+", label: "Projets réalisés" }
   ]
 
   return (

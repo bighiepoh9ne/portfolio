@@ -31,16 +31,6 @@ function ProjectCard({ project }) {
             GitHub
           </a>
         )}
-        {project.demo && (
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-link demo"
-          >
-            Démo
-          </a>
-        )}
       </div>
     </motion.div>
   )
