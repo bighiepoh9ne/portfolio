@@ -11,75 +11,56 @@ function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <Link to="/contact">
-          <motion.div
-            className="availability-badge"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ 
-              opacity: [1, 0.6, 1],
-              scale: [1, 1.05, 1]
-            }}
-            transition={{ 
-              duration: 2,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-            whileHover={{ scale: 1.1 }}
-            style={{ cursor: 'pointer' }}
+        <div className="hero-text">
+          <motion.h1
+            className="hero-title"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
           >
-            À la recherche d'un stage ou d'une alternance
+            La passion au service
+            <br />
+            <span className="highlight">de la data</span>
+          </motion.h1>
+
+          <motion.p
+            className="hero-description"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+          >
+            Étudiant en licence Professionnelle de Datamining à l'université Gustave Eiffel.
+            Organisé, méthodique et passionné par la transformation des données brutes en insights stratégiques.
+          </motion.p>
+
+          <motion.div
+            className="hero-buttons"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+          >
+            <Link to="/parcours">
+              <motion.button
+                className="btn primary"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Voir mon parcours →
+              </motion.button>
+            </Link>
+            <Link to="/contact">
+              <motion.button
+                className="btn secondary"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Me contacter
+              </motion.button>
+            </Link>
           </motion.div>
-        </Link>
-
-        <motion.h1
-          className="hero-title"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-        >
-          La passion au service
-          <br />
-          <span className="highlight">de la data</span>
-        </motion.h1>
-
-        <motion.p
-          className="hero-description"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-        >
-          Étudiant en licence Professionnelle de Datamining à l'université Gustave Eiffel. 
-          Organisé, méthodique et passionné par la transformation des données brutes en insights stratégiques.
-        </motion.p>
+        </div>
 
         <motion.div
-          className="hero-buttons"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.7 }}
-        >
-          <Link to="/parcours">
-            <motion.button
-              className="btn primary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Voir mon parcours →
-            </motion.button>
-          </Link>
-          <Link to="/contact">
-            <motion.button
-              className="btn secondary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Me contacter
-            </motion.button>
-          </Link>
-        </motion.div>
-      </motion.div>
-
-      <motion.div
         className="hero-blob-container"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -144,6 +125,7 @@ function Hero() {
             </motion.div>
           </div>
         </div>
+      </motion.div>
       </motion.div>
     </section>
   )
