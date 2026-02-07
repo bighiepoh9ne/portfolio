@@ -92,7 +92,7 @@ function About() {
               transition={{ duration: 0.6, delay: 1 }}
             >
               <a
-                href="https://github.com/akikmane"
+                href="https://github.com/bighiepoh9ne"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn github-btn"
