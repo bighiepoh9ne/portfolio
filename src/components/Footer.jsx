@@ -17,7 +17,7 @@ function Footer() {
             <a href="https://github.com/bighiepoh9ne" target="_blank" rel="noopener noreferrer" className="footer-link">
               GitHub
             </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="footer-link">
+            <a href="www.linkedin.com/in/cephas-akikmane-allogo" target="_blank" rel="noopener noreferrer" className="footer-link">
               LinkedIn
             </a>
             <a href="mailto:cephasallogo@gmail.com" className="footer-link">
