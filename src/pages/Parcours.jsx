@@ -17,6 +17,7 @@ function Parcours() {
           "Analyse statistique avancée",
           "Machine Learning et Intelligence Artificielle",
           "Big Data et bases de données NoSQL",
+          "Data Management Platform",
           "Visualisation de données avec Power BI",
           "Data : R (Rstudio), SQL (Oracle), SAS"
         ],
@@ -34,7 +35,7 @@ function Parcours() {
       institution: "CY Tech Cergy",
       summary: "Formation d'ingénieur généraliste avec spécialisation en mathématiques appliquées.",
       details: {
-        description: "Cursus complet d'ingénieur avec focus sur les mathématiques, l'informatique et leurs applications industrielles.",
+        description: "Deux années de cursus d'ingénieur avec focus sur les mathématiques, l'informatique et leurs applications industrielles.",
         skills: [
           "Bases de données : R (R Studio), SQL",
           "Statistiques inférentielles, Probabilités, Simulation",
