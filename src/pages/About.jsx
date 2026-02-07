@@ -101,8 +101,8 @@ function About() {
                 Mon GitHub
               </a>
               <a
-                href="/Cv.pdf"
-                download="CV.pdf"
+                href="C:\Users\AKIKMANE\Documents\portfolio\dist\Cv.pdf"
+                download="CV_AKIKMANE_Cephas.pdf"
                 className="btn cv-btn"
               >
                 <span className="btn-icon"></span>
