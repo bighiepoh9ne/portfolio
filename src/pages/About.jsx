@@ -101,13 +101,14 @@ function About() {
                 Mon GitHub
               </a>
               <a
-                href="Cv.pdf"
+                href="Cephas_Cv.pdf"
                 download="CV_AKIKMANE_Cephas.pdf"
                 className="btn cv-btn"
               >
                 <span className="btn-icon"></span>
                 Mon CV
               </a>
+
             </motion.div>
           </motion.div>
         </motion.section>
