@@ -102,7 +102,7 @@ function About() {
               </a>
               <a
                 href="Cephas_Cv.pdf"
-                download="CV_AKIKMANE_Cephas.pdf"
+                download="CV_Cephas_Akikmane_Allogo.pdf"
                 className="btn cv-btn"
               >
                 <span className="btn-icon"></span>
