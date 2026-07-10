@@ -101,7 +101,7 @@ function About() {
                 Mon GitHub
               </a>
               <a
-                href="Cephas_Cv.pdf"
+                href="CV_Cephas_Akikmane_Allogo.pdf"
                 download="CV_Cephas_Akikmane_Allogo.pdf"
                 className="btn cv-btn"
               >
