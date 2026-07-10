@@ -86,7 +86,7 @@ function Contact() {
               <h3>Réseaux</h3>
               <div style={{ display: 'flex', gap: '15px', marginTop: '10px' }}>
                 <a
-                  href="https://linkedin.com/in/akikmane"
+                  href="www.linkedin.com/in/cephas-akikmane-allogo"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: '#00d4ff', textDecoration: 'none' }}
