@@ -36,7 +36,7 @@ export const projects = [
   },
   {
     title: "Club Med",
-    description: "Projet Club Med.",
+    description: "Projet de segmentation client réalisé pour Club Med.",
     tech: ["Excel", "R", "Power BI", "Powerpoint", "Word"],
     github: "https://github.com/bighiepoh9ne/Projet-Club-Med-",
     demo: "https://github.com/bighiepoh9ne/Projet-Club-Med-"
