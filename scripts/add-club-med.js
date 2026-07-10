@@ -12,7 +12,7 @@ const obj =
 `  },
   {
     title: "Club Med",
-    description: "Projet Club Med.",
+    description: "Projet de segmentation client réalisé pour Club Med.",
     tech: [],
     github: "https://github.com/bighiepoh9ne/Projet-Club-Med-",
     demo: "https://github.com/bighiepoh9ne/Projet-Club-Med-"
