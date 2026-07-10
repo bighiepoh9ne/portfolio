@@ -33,5 +33,12 @@ export const projects = [
     tech: ["R"],
     github: "https://github.com/bighiepoh9ne/Projet-de-statistique",
     demo: "https://github.com/bighiepoh9ne/Projet-de-statistique"
+  },
+  {
+    title: "Club Med",
+    description: "Projet Club Med.",
+    tech: [],
+    github: "https://github.com/bighiepoh9ne/Projet-Club-Med-",
+    demo: "https://github.com/bighiepoh9ne/Projet-Club-Med-"
   }
 ];
