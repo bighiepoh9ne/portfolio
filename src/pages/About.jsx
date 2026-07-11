@@ -63,7 +63,7 @@ function About() {
                 <p className="about-description">
                   Mon approche combine analyse technique rigoureuse et compréhension business pour 
                   proposer des solutions data-driven pertinentes. J'ai développé une expertise particulière 
-                  en Python, SQL, et Power BI, me permettant de couvrir l'ensemble du cycle de vie des 
+                  en Python, SQL, et Power BI, R, Excel, Machine Learning me permettant de couvrir l'ensemble du cycle de vie des 
                   données : de la collecte et nettoyage jusqu'à la visualisation et la présentation des 
                   résultats.
                 </p>
