@@ -59,8 +59,8 @@ function Skills() {
       category: "Analyse",
       level: 92,
       icon: <FaFileExcel />,
-      description: "Utilisation avancée d'Excel pour l'analyse de données et VBA.",
-      tools: ["VBA", "Formules avancées", "Tableaux croisés"]
+      description: "Utilisation avancée d'Excel pour l'analyse de données, couplée à R et VBA pour l'automatisation et le traitement statistique.",
+      tools: ["VBA", "Formules avancées", "Tableaux croisés", "R"]
     },
     {
       id: 7,
@@ -145,6 +145,24 @@ function Skills() {
     },
     {
       id: 16,
+      name: "PyCharm",
+      category: "Outils",
+      level: 88,
+      icon: <FaCode />,
+      description: "IDE Python utilisé au quotidien pour le développement, le débogage et la structuration de projets data science.",
+      tools: ["Débogueur", "Environnements virtuels", "Refactoring"]
+    },
+    {
+      id: 17,
+      name: "Shiny",
+      category: "Outils",
+      level: 78,
+      icon: <SiR />,
+      description: "Framework R pour créer des applications web interactives dédiées à la visualisation et l'exploration de données.",
+      tools: ["Dashboards interactifs", "R", "Reactive programming"]
+    },
+    {
+      id: 18,
       name: "Probabilités",
       category: "Mathématiques",
       level: 85,
@@ -153,7 +171,7 @@ function Skills() {
       tools: ["Lois de probabilité", "Théorème central limite", "Simulation"]
     },
     {
-      id: 17,
+      id: 19,
       name: "Statistiques",
       category: "Mathématiques",
       level: 88,
@@ -162,7 +180,7 @@ function Skills() {
       tools: ["Tests statistiques", "Régression", "ANOVA"]
     },
     {
-      id: 18,
+      id: 20,
       name: "PowerPoint",
       category: "Outils",
       level: 80,
@@ -171,7 +189,7 @@ function Skills() {
       tools: ["Diagrammes", "Animations", "Templates"]
     },
     {
-      id: 19,
+      id: 21,
       name: "Word",
       category: "Outils",
       level: 75,
