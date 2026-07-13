@@ -1,13 +1,15 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
 import idImage from "../data/ID.png"
+import { projects } from "../data/project"
 
 function About() {
   const [showMore, setShowMore] = useState(false)
+  const projectCount = projects.length
 
   const stats = [
     { number: "3+", label: "Années d'expérience" },
-    { number: "5+", label: "Projets réalisés" }
+    { number: `${projectCount}+`, label: "Projets réalisés" }
   ]
 
   return (
