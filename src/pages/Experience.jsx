@@ -163,8 +163,8 @@ function Experience() {
                   <div className="detail-section">
                     <h4>Responsabilités</h4>
                     <ul>
-                      {exp.details.responsibilities.map((resp, idx) => (
-                        <li key={idx}>{resp}</li>
+                      {exp.details.responsibilities.map((resp) => (
+                        <li key={resp}>{resp}</li>
                       ))}
                     </ul>
                   </div>
@@ -172,7 +172,7 @@ function Experience() {
                   <div className="detail-section">
                     <h4>Compétences Développées</h4>
                     <ul>
-                      {exp.details.skills.map((skill, idx) => (
+                      {exp.details.skills.map((skill) => (
                         <li key={skill}>{skill}</li>
                       ))}
                     </ul>
