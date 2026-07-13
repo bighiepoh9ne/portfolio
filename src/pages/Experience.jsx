@@ -7,6 +7,29 @@ function Experience() {
   const experiences = [
     {
       id: 1,
+      period: "Juin 2026 - Août 2026",
+      title: "Data Analyst en Cyber-sécurité",
+      company: "RHOPEN (Entreprise de services du numérique), Paris, France",
+      summary: "Contribution à l'analyse de base de données.",
+      details: {
+        description: "Traitement, analyse et mise en cohérence des données d'origines diverses afin de restituer les grands de la cybersécurité conformément aux exigences internationales actuelles.",
+        responsibilities: [
+          "Nettoyage des données d'un dataset de trafic réseau (NSL-KDD/CICIDS 2017)",
+          "Analyse d'un dataset de trafic réseau (NSL-KDD/CICIDS 2017) pour identifier les typologies d'attaques (DoS, brute force) et comportements suspects.",
+          "création de KPI et développement de Dashboard interactifs (Power BI) présentant les tendances d'attaques et recommandations de surveillance renforcée",
+          "Mise en cohérence des données d'origines diverses"
+        ],
+        skills: [
+          "Analyse cyber-sécurité",
+          "Analyse des attaques informatiques",
+          "Création des KPI et Dashboard interactifs",
+          "Reportings et recommandations de surveillance renforcée"
+        
+        ]
+      }
+    },
+    {
+      id: 2,
       period: "Mai 2025 - Août 2025",
       title: "Chargé des Données Statistiques Macroéconomiques",
       company: "Ministère des Finances, Libreville, Gabon",
@@ -28,7 +51,7 @@ function Experience() {
       }
     },
     {
-      id: 2,
+      id: 3,
       period: "Juillet 2024 - Août 2024",
       title: "Stagiaire Data Scientist",
       company: "RHOPEN (Entreprise de services du numérique), Paris, France",
@@ -50,7 +73,7 @@ function Experience() {
       }
     },
     {
-      id: 3,
+      id: 4,
       period: "Janvier 2022 - Mai 2022",
       title: "Stagiaire de Mathématiques",
       company: "Collège les Gratte-Ciel Morice Leroux, Villeurbanne, France",
