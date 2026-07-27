@@ -42,17 +42,16 @@ function About() {
               À propos de <span className="highlight">moi</span>
             </h1>
             <p className="about-description">
-              Je m'appelle AKIKMANE ALLOGO Cephas, étudiant passionné en Licence Professionnelle de Datamining à l'université Gustave Eiffel, 
-              je me spécialise dans l'analyse et la transformation des données en insights stratégiques. 
-              Mon parcours académique et mes expériences pratiques m'ont permis de développer une expertise 
-              solide en manipulation de données, visualisation et modélisation prédictive.
+              Je m'appelle AKIKMANE ALLOGO Cephas, étudiant en Licence Professionnelle Datamining
+              à l'Université Gustave Eiffel, et prochainement en Master Finance d'Entreprise et Ingénierie Financière. 
+              Je me spécialise dans l'analyse et la transformation des données en insights stratégiques, 
+              avec une orientation forte vers la finance, les risques et l'aide à la décision.
             </p>
             <p className="about-description">
-              Organisé et méthodique, j'aborde chaque projet avec rigueur et créativité. Ma passion pour 
-              la data science me pousse à explorer constamment de nouvelles techniques et outils pour 
-              extraire le maximum de valeur des données. Je suis actuellement à la recherche d'un stage 
-              ou d'une alternance pour mettre en pratique mes compétences et contribuer à des projets 
-              innovants.
+              Organisé et méthodique, j'aborde chaque projet avec rigueur et créativité. 
+              Ma double culture, data science et finance d'entreprise, me pousse à explorer constamment de nouvelles techniques pour extraire le maximum de valeur des données au service de la décision financière. 
+              Je suis actuellement à la recherche d'une alternance à partir de septembre 2026 dans les domaines de l'analyse financière, 
+              du contrôle de gestion, des risques ou de la corporate finance, pour mettre en pratique mes compétences et contribuer à des projets à fort impact.
             </p>
             
             {showMore && (
@@ -63,17 +62,14 @@ function About() {
                 transition={{ duration: 0.5 }}
               >
                 <p className="about-description">
-                  Mon approche combine analyse technique rigoureuse et compréhension business pour 
-                  proposer des solutions data-driven pertinentes. J'ai développé une expertise particulière 
-                  en Python, SQL, et Power BI, R, Excel, Machine Learning me permettant de couvrir l'ensemble du cycle de vie des 
-                  données : de la collecte et nettoyage jusqu'à la visualisation et la présentation des 
-                  résultats.
+                  Mon approche combine analyse technique rigoureuse et compréhension business pour proposer des solutions data-driven pertinentes. 
+                  J'ai développé une expertise en Python, SQL, Power BI, R, Excel avancé et Machine Learning, me permettant de couvrir l'ensemble du cycle de vie de la donnée :
+                  de la collecte et du nettoyage jusqu'à la modélisation, la visualisation et la restitution aux équipes métiers.
                 </p>
                 <p className="about-description">
                   Au-delà des compétences techniques, je valorise le travail d'équipe et la communication. 
-                  Je crois fermement que les meilleures solutions émergent de la collaboration et de 
-                  l'échange d'idées. Mon objectif est de devenir un expert reconnu en data science, 
-                  capable de transformer des problématiques complexes en opportunités stratégiques.
+                  Je crois fermement que les meilleures solutions émergent de la collaboration et de l'échange d'idées. 
+                  Mon objectif est de devenir un professionnel reconnu à l'interface de la finance et de la donnée, capable de transformer des problématiques complexes en opportunités stratégiques.
                 </p>
               </motion.div>
             )}
