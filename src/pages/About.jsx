@@ -42,8 +42,7 @@ function About() {
               À propos de <span className="highlight">moi</span>
             </h1>
             <p className="about-description">
-              Je m'appelle AKIKMANE ALLOGO Cephas, étudiant en Licence Professionnelle Datamining
-              à l'Université Gustave Eiffel, et prochainement en Master Finance d'Entreprise et Ingénierie Financière. 
+              Je m'appelle AKIKMANE ALLOGO Cephas, étudiant en Licence Professionnelle Datamining et prochainement en Master Finance d'Entreprise et Ingénierie Financière. 
               Je me spécialise dans l'analyse et la transformation des données en insights stratégiques, 
               avec une orientation forte vers la finance, les risques et l'aide à la décision.
             </p>
