@@ -42,8 +42,8 @@ function StarryBackground() {
             width: `${star.size}px`,
             height: `${star.size}px`,
             borderRadius: '50%',
-            backgroundColor: 'white',
-            boxShadow: `0 0 ${star.size * 2}px rgba(255, 255, 255, 0.8)`
+            backgroundColor: '#d9fff0',
+            boxShadow: `0 0 ${star.size * 2}px rgba(0, 255, 156, 0.6)`
           }}
           animate={{
             opacity: [0.2, 1, 0.2],

@@ -12,6 +12,15 @@ function Hero() {
         transition={{ duration: 0.8 }}
       >
         <div className="hero-text">
+          <motion.span
+            className="availability-badge"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+          >
+            $ status --check<br />&gt; DB_CONNECTED · PIPELINE_ACTIVE
+          </motion.span>
+
           <motion.h1
             className="hero-title"
             initial={{ opacity: 0, y: 30 }}
@@ -74,9 +83,9 @@ function Hero() {
           >
             <defs>
               <linearGradient id="blobGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#E50914" />
-                <stop offset="50%" stopColor="#8B0000" />
-                <stop offset="100%" stopColor="#2b0000" />
+                <stop offset="0%" stopColor="#00FF9C" />
+                <stop offset="50%" stopColor="#0EA5E9" />
+                <stop offset="100%" stopColor="#062028" />
               </linearGradient>
               <filter id="glow">
                 <feGaussianBlur stdDeviation="10" result="coloredBlur"/>

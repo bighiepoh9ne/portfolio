@@ -38,6 +38,11 @@ function About() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
+            <p className="terminal-prompt" style={{ textAlign: "left", marginBottom: "16px" }}>
+              <span className="prompt-user">data@akik</span>
+              <span className="prompt-symbol">~$</span>
+              SELECT * FROM profil WHERE nom = 'Cephas';
+            </p>
             <h1 className="about-title">
               À propos de <span className="highlight">moi</span>
             </h1>
@@ -127,7 +132,7 @@ function About() {
                 transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
                 whileHover={{ 
                   scale: 1.05,
-                  boxShadow: "0 20px 40px rgba(229, 9, 20, 0.35)"
+                  boxShadow: "0 20px 40px rgba(0, 255, 156, 0.35)"
                 }}
               >
                 <motion.div

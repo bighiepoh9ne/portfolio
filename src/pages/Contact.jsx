@@ -31,6 +31,16 @@ function Contact() {
       transition={{ duration: 0.5 }}
     >
       <div className="container">
+        <motion.p
+          className="terminal-prompt"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <span className="prompt-user">data@akik</span>
+          <span className="prompt-symbol">~$</span>
+          INSERT INTO messages (name, email) VALUES (?, ?);
+        </motion.p>
         <motion.h1
           className="section-title"
           initial={{ opacity: 0, y: 50 }}
@@ -89,7 +99,7 @@ function Contact() {
                   href="www.linkedin.com/in/cephas-akikmane-allogo"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: '#E50914', textDecoration: 'none' }}
+                  style={{ color: '#00FF9C', textDecoration: 'none' }}
                 >
                   LinkedIn
                 </a>
@@ -97,7 +107,7 @@ function Contact() {
                   href="https://github.com/bighiepoh9ne"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: '#E50914', textDecoration: 'none' }}
+                  style={{ color: '#00FF9C', textDecoration: 'none' }}
                 >
                   GitHub
                 </a>

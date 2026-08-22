@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import StarryBackground from "./components/StarryBackground"
+import DataStream from "./components/DataStream"
 
 import Home from "./pages/Home"
 import About from "./pages/About"
@@ -15,6 +16,7 @@ function App() {
   return (
     <BrowserRouter basename="/portfolio">
       <StarryBackground />
+      <DataStream />
       <Navbar />
 
       <Routes>

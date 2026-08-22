@@ -84,6 +84,16 @@ function Parcours() {
       transition={{ duration: 0.5 }}
     >
       <div className="container">
+        <motion.p
+          className="terminal-prompt"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <span className="prompt-user">data@akik</span>
+          <span className="prompt-symbol">~$</span>
+          SELECT * FROM parcours ORDER BY year DESC;
+        </motion.p>
         <motion.h1
           className="section-title"
           initial={{ opacity: 0, y: 50 }}

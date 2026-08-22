@@ -12,6 +12,18 @@ function getGithubPreviewImage(url) {
   }
 }
 
+const TECH_COLORS = {
+  Python: { bg: "#3776AB", color: "#FFD43B" },
+  R: { bg: "#276DC3", color: "#ffffff" },
+  SQL: { bg: "#00758F", color: "#ffffff" },
+  Excel: { bg: "#217346", color: "#ffffff" },
+  VBA: { bg: "#8B008B", color: "#ffffff" },
+  "Power BI": { bg: "#F2C811", color: "#1a1a1a" },
+  DAX: { bg: "#F2C811", color: "#1a1a1a" },
+  Word: { bg: "#2B579A", color: "#ffffff" },
+  Powerpoint: { bg: "#B7472A", color: "#ffffff" }
+}
+
 function ProjectCard({ project }) {
   const [imgError, setImgError] = useState(false)
   const previewImage = project.github ? getGithubPreviewImage(project.github) : null
@@ -47,11 +59,18 @@ function ProjectCard({ project }) {
         <p className="project-description">{project.description}</p>
 
         <div className="project-tech">
-          {project.tech.map((tech, index) => (
-            <span key={index} className="tech-tag">
-              {tech}
-            </span>
-          ))}
+          {project.tech.map((tech, index) => {
+            const colors = TECH_COLORS[tech]
+            return (
+              <span
+                key={index}
+                className="tech-tag"
+                style={colors ? { background: colors.bg, color: colors.color } : undefined}
+              >
+                {tech}
+              </span>
+            )
+          })}
         </div>
 
         <div className="project-links">
