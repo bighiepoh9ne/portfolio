@@ -127,7 +127,7 @@ function About() {
                 transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
                 whileHover={{ 
                   scale: 1.05,
-                  boxShadow: "0 20px 40px rgba(0, 212, 255, 0.3)"
+                  boxShadow: "0 20px 40px rgba(229, 9, 20, 0.35)"
                 }}
               >
                 <motion.div

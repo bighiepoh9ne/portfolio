@@ -74,9 +74,9 @@ function Hero() {
           >
             <defs>
               <linearGradient id="blobGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#0891b2" />
-                <stop offset="50%" stopColor="#0e7490" />
-                <stop offset="100%" stopColor="#164e63" />
+                <stop offset="0%" stopColor="#E50914" />
+                <stop offset="50%" stopColor="#8B0000" />
+                <stop offset="100%" stopColor="#2b0000" />
               </linearGradient>
               <filter id="glow">
                 <feGaussianBlur stdDeviation="10" result="coloredBlur"/>

@@ -68,7 +68,7 @@ function Navbar() {
               <motion.span
                 whileHover={{ 
                   scale: 1.1,
-                  color: "#00d4ff"
+                  color: "#E50914"
                 }}
                 animate={{
                   y: hoveredLink === `${item.path}-${index}` ? -3 : 0,
@@ -89,7 +89,8 @@ function Navbar() {
                       left: 0,
                       right: 0,
                       height: 2,
-                      background: 'linear-gradient(90deg, #00d4ff, #0891b2)',
+                      background: 'linear-gradient(90deg, #E50914, #B20710)',
+                      boxShadow: '0 0 8px rgba(229, 9, 20, 0.8)',
                       borderRadius: 2
                     }}
                     initial={false}
