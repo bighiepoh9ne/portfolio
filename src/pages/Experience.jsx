@@ -7,7 +7,7 @@ function Experience() {
   const experiences = [
     {
       id: 1,
-      period: "Juin 2026 - Août 2026",
+      period: "Mars 2026 - Août 2026",
       title: "Data Analyst en Cyber-sécurité",
       company: "RHOPEN (Entreprise de services du numérique), Paris, France",
       summary: "Contribution à l'analyse de base de données.",
@@ -30,7 +30,7 @@ function Experience() {
     },
     {
       id: 2,
-      period: "Mai 2025 - Août 2025",
+      period: "Avril 2025 - Août 2025",
       title: "Chargé des Données Statistiques Macroéconomiques",
       company: "Ministère des Finances, Libreville, Gabon",
       summary: "Élaboration et valorisation des comptes économiques du Gabon.",
