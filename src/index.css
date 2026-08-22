@@ -13,9 +13,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --primary-color: #00FF9C;
+  --primary-color: #3B82F6;
   --secondary-color: #0EA5E9;
-  --accent-color: #FFB300;
+  --accent-color: #38BDF8;
   --text-color: rgba(255, 255, 255, 0.87);
   --bg-color: #000000;
   --glass-bg: rgba(255, 255, 255, 0.05);
@@ -36,32 +36,9 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(180deg, #000000 0%, #051510 45%, #000a08 100%);
+  background: linear-gradient(180deg, #000000 0%, #050b1a 45%, #00040a 100%);
   position: relative;
   overflow-x: hidden;
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: 
-    radial-gradient(2px 2px at 20% 30%, white, transparent),
-    radial-gradient(2px 2px at 60% 70%, white, transparent),
-    radial-gradient(1px 1px at 50% 50%, white, transparent),
-    radial-gradient(1px 1px at 80% 10%, white, transparent),
-    radial-gradient(2px 2px at 90% 60%, white, transparent),
-    radial-gradient(1px 1px at 33% 80%, white, transparent),
-    radial-gradient(2px 2px at 15% 90%, white, transparent),
-    radial-gradient(1px 1px at 70% 20%, white, transparent),
-    radial-gradient(1px 1px at 40% 40%, white, transparent),
-    radial-gradient(2px 2px at 25% 60%, white, transparent);
-  background-size: 200% 200%;
-  animation: starfield 200s linear infinite;
-  z-index: 0;
 }
 
 body::after {
@@ -72,24 +49,15 @@ body::after {
   width: 100%;
   height: 100%;
   background:
-    repeating-linear-gradient(90deg, rgba(0, 255, 156, 0.05) 0px, rgba(0, 255, 156, 0.05) 1px, transparent 1px, transparent 80px),
-    repeating-linear-gradient(0deg, rgba(0, 255, 156, 0.05) 0px, rgba(0, 255, 156, 0.05) 1px, transparent 1px, transparent 80px),
+    repeating-linear-gradient(90deg, rgba(59, 130, 246, 0.05) 0px, rgba(59, 130, 246, 0.05) 1px, transparent 1px, transparent 80px),
+    repeating-linear-gradient(0deg, rgba(59, 130, 246, 0.05) 0px, rgba(59, 130, 246, 0.05) 1px, transparent 1px, transparent 80px),
     radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.12) 0%, transparent 50%),
     radial-gradient(circle at 80% 80%, rgba(0, 191, 255, 0.12) 0%, transparent 50%),
-    radial-gradient(circle at 40% 20%, rgba(6, 40, 40, 0.08) 0%, transparent 50%);
+    radial-gradient(circle at 40% 20%, rgba(6, 12, 40, 0.08) 0%, transparent 50%);
   -webkit-mask-image: radial-gradient(ellipse at 50% 0%, rgba(0, 0, 0, 0.9) 0%, transparent 70%);
   mask-image: radial-gradient(ellipse at 50% 0%, rgba(0, 0, 0, 0.9) 0%, transparent 70%);
   animation: nebula 30s ease-in-out infinite;
   z-index: 0;
-}
-
-@keyframes starfield {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
 }
 
 @keyframes nebula {
@@ -97,19 +65,19 @@ body::after {
     background:
       radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
       radial-gradient(circle at 80% 80%, rgba(0, 191, 255, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 40% 20%, rgba(6, 40, 40, 0.08) 0%, transparent 50%);
+      radial-gradient(circle at 40% 20%, rgba(6, 12, 40, 0.08) 0%, transparent 50%);
   }
   33% {
     background:
       radial-gradient(circle at 70% 30%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
       radial-gradient(circle at 30% 70%, rgba(0, 191, 255, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 60% 60%, rgba(6, 40, 40, 0.08) 0%, transparent 50%);
+      radial-gradient(circle at 60% 60%, rgba(6, 12, 40, 0.08) 0%, transparent 50%);
   }
   66% {
     background:
       radial-gradient(circle at 50% 80%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
       radial-gradient(circle at 20% 20%, rgba(0, 191, 255, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 40%, rgba(6, 40, 40, 0.08) 0%, transparent 50%);
+      radial-gradient(circle at 80% 40%, rgba(6, 12, 40, 0.08) 0%, transparent 50%);
   }
 }
 
@@ -162,10 +130,10 @@ button:focus-visible {
   grid-template-columns: auto 1fr;
   align-items: center;
   padding: 18px 60px;
-  background: linear-gradient(90deg, rgba(0, 14, 12, 0.85), rgba(0, 8, 10, 0.85));
+  background: linear-gradient(90deg, rgba(4, 8, 20, 0.85), rgba(2, 4, 12, 0.85));
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(0, 255, 156, 0.25);
-  box-shadow: 0 4px 30px rgba(0, 255, 156, 0.15);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.25);
+  box-shadow: 0 4px 30px rgba(59, 130, 246, 0.15);
 }
 
 .logo {
@@ -214,7 +182,7 @@ button:focus-visible {
 
 .nav-links a:hover {
   color: #ffffff;
-  text-shadow: 0 0 12px rgba(0, 255, 156, 0.9);
+  text-shadow: 0 0 12px rgba(59, 130, 246, 0.9);
 }
 
 .page {
@@ -245,14 +213,14 @@ button:focus-visible {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  filter: drop-shadow(0 0 20px rgba(0, 255, 156, 0.35));
+  filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.35));
 }
 
 .terminal-prompt {
   font-family: var(--mono-font);
   font-size: 0.95rem;
   text-align: center;
-  color: rgba(0, 255, 156, 0.75);
+  color: rgba(59, 130, 246, 0.75);
   margin-bottom: 40px;
   letter-spacing: 0.5px;
 }
@@ -283,14 +251,14 @@ button:focus-visible {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 255, 156, 0.2);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
 }
 
 .availability-btn:hover {
-  background: rgba(0, 255, 156, 0.1);
+  background: rgba(59, 130, 246, 0.1);
   border-color: var(--primary-color);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 255, 156, 0.4);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
 .modal-overlay {
@@ -317,7 +285,7 @@ button:focus-visible {
   width: 90%;
   text-align: center;
   position: relative;
-  box-shadow: 0 10px 40px rgba(0, 255, 156, 0.3);
+  box-shadow: 0 10px 40px rgba(59, 130, 246, 0.3);
 }
 
 .modal-close {
@@ -373,8 +341,8 @@ button:focus-visible {
 .availability-badge {
   display: inline-block;
   padding: 8px 20px;
-  background: rgba(0, 255, 156, 0.06);
-  border: 1px solid rgba(0, 255, 156, 0.25);
+  background: rgba(59, 130, 246, 0.06);
+  border: 1px solid rgba(59, 130, 246, 0.25);
   border-radius: 4px;
   font-family: var(--mono-font);
   font-size: 0.8rem;
@@ -394,7 +362,7 @@ button:focus-visible {
 }
 
 .hero-title .highlight {
-  background: linear-gradient(90deg, #00FF9C 0%, #0EA5E9 100%);
+  background: linear-gradient(90deg, #3B82F6 0%, #0EA5E9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -434,9 +402,9 @@ button:focus-visible {
 }
 
 .btn.primary {
-  background: #00FF9C;
+  background: #3B82F6;
   color: #fff;
-  box-shadow: 0 4px 20px rgba(0, 255, 156, 0.4);
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
 }
 
 .btn.secondary {
@@ -450,7 +418,7 @@ button:focus-visible {
 }
 
 .btn.primary:hover {
-  box-shadow: 0 6px 30px rgba(0, 255, 156, 0.5);
+  box-shadow: 0 6px 30px rgba(59, 130, 246, 0.5);
   background: #33FFC2;
 }
 
@@ -588,7 +556,7 @@ button:focus-visible {
 
 .skill-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 255, 156, 0.2);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
 }
 
 .skill-icon {
@@ -638,12 +606,12 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   position: relative;
-  box-shadow: 0 10px 30px rgba(0, 255, 156, 0.1);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
 }
 
 .project-card:hover {
-  border-color: rgba(0, 255, 156, 0.6);
-  box-shadow: 0 30px 60px rgba(0, 255, 156, 0.45), 0 0 45px rgba(0, 255, 156, 0.2);
+  border-color: rgba(59, 130, 246, 0.6);
+  box-shadow: 0 30px 60px rgba(59, 130, 246, 0.45), 0 0 45px rgba(59, 130, 246, 0.2);
 }
 
 .project-preview {
@@ -651,7 +619,7 @@ button:focus-visible {
   width: 100%;
   aspect-ratio: 1200 / 630;
   overflow: hidden;
-  background: linear-gradient(135deg, rgba(0, 255, 156, 0.18), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.18), rgba(0, 0, 0, 0.6));
 }
 
 .project-preview-img {
@@ -745,7 +713,7 @@ button:focus-visible {
 
 .tech-tag {
   background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-  color: #001a0f;
+  color: #ffffff;
   padding: 5px 12px;
   border-radius: 4px;
   font-size: 0.75rem;
@@ -775,7 +743,7 @@ button:focus-visible {
 
 .project-link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 255, 156, 0.3);
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
 }
 
 .experience-page {
@@ -799,7 +767,7 @@ button:focus-visible {
 
 .experience-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 255, 156, 0.2);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
 }
 
 .experience-card h3 {
@@ -901,7 +869,7 @@ button:focus-visible {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 2px rgba(0, 255, 156, 0.2);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
 }
 
 .form-group textarea {
@@ -937,7 +905,7 @@ button:focus-visible {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(0, 255, 156, 0.3);
+  box-shadow: 0 10px 40px rgba(59, 130, 246, 0.3);
 }
 
 .about-intro {
@@ -955,7 +923,7 @@ button:focus-visible {
 }
 
 .about-title .highlight {
-  background: linear-gradient(90deg, #00FF9C 0%, #0EA5E9 100%);
+  background: linear-gradient(90deg, #3B82F6 0%, #0EA5E9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -984,7 +952,7 @@ button:focus-visible {
 
 .show-more-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(0, 255, 156, 0.4);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
 }
 
 .stats-section {
@@ -1059,7 +1027,7 @@ button:focus-visible {
 
 .skill-item:hover {
   transform: translateX(10px);
-  box-shadow: 0 10px 30px rgba(0, 255, 156, 0.2);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
 }
 
 .skill-header {
@@ -1137,7 +1105,7 @@ html {
 }
 
 .skill-category-section:hover {
-  box-shadow: 0 10px 30px rgba(0, 255, 156, 0.2);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
 }
 
 .category-header {
@@ -1183,9 +1151,9 @@ html {
 }
 
 .skill-item:hover {
-  background: rgba(0, 255, 156, 0.1);
+  background: rgba(59, 130, 246, 0.1);
   border-color: var(--primary-color);
-  box-shadow: 0 5px 20px rgba(0, 255, 156, 0.3);
+  box-shadow: 0 5px 20px rgba(59, 130, 246, 0.3);
   transform: translateY(-5px);
 }
 
@@ -1226,14 +1194,14 @@ html {
 
 .skill-detail-panel {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 255, 156, 0.3);
+  border: 1px solid rgba(59, 130, 246, 0.3);
   border-radius: 20px;
   padding: 30px;
   backdrop-filter: blur(10px);
   max-width: 500px;
   width: 100%;
   margin: 40px auto 0;
-  box-shadow: 0 10px 40px rgba(0, 255, 156, 0.2);
+  box-shadow: 0 10px 40px rgba(59, 130, 246, 0.2);
 }
 
 .close-detail-btn {
@@ -1286,7 +1254,7 @@ html {
   font-size: 0.8rem;
   font-weight: 700;
   font-family: var(--mono-font);
-  color: #001a0f;
+  color: #ffffff;
 }
 
 .skill-detail-level {
@@ -1346,8 +1314,8 @@ html {
 }
 
 .tool-tag {
-  background: rgba(0, 255, 156, 0.1);
-  border: 1px solid rgba(0, 255, 156, 0.3);
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
   padding: 6px 14px;
   border-radius: 4px;
   font-size: 0.8rem;
@@ -1357,7 +1325,7 @@ html {
 }
 
 .tool-tag:hover {
-  background: rgba(0, 255, 156, 0.2);
+  background: rgba(59, 130, 246, 0.2);
   border-color: var(--primary-color);
   transform: translateY(-2px);
 }
@@ -1600,11 +1568,11 @@ html {
 }
 
 .parcours-card:hover {
-  box-shadow: 0 20px 40px rgba(0, 255, 156, 0.2);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
 }
 
 .parcours-card.expanded {
-  box-shadow: 0 20px 40px rgba(0, 255, 156, 0.3);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
 }
 
 .parcours-header {
@@ -1616,7 +1584,7 @@ html {
 
 .parcours-year {
   background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-  color: #001a0f;
+  color: #ffffff;
   padding: 8px 16px;
   border-radius: 4px;
   font-weight: 700;
@@ -1727,11 +1695,11 @@ html {
 }
 
 .experience-card:hover {
-  box-shadow: 0 20px 40px rgba(0, 255, 156, 0.2);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
 }
 
 .experience-card.expanded {
-  box-shadow: 0 20px 40px rgba(0, 255, 156, 0.3);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
 }
 
 .experience-header {
@@ -1743,7 +1711,7 @@ html {
 
 .experience-period {
   background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-  color: #001a0f;
+  color: #ffffff;
   padding: 8px 16px;
   border-radius: 4px;
   font-weight: 700;

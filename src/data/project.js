@@ -40,5 +40,12 @@ export const projects = [
     tech: ["Excel", "R", "Power BI", "Powerpoint", "Word"],
     github: "https://github.com/bighiepoh9ne/Projet-Club-Med-",
     demo: "https://github.com/bighiepoh9ne/Projet-Club-Med-"
+  },
+  {
+    title: "Projet de Scoring Crédit",
+    description: "Pipeline complet de data science appliqué au scoring de crédit : nettoyage et exploration sous Python, validation des tendances via SQL, modélisation prédictive (régression logistique, Random Forest, XGBoost) pour estimer le risque de défaut de paiement, et restitution via un dashboard Power BI interactif.",
+    tech: ["Python", "SQL", "Power BI"],
+    github: "https://github.com/bighiepoh9ne/Projet-de-scoring-credit",
+    demo: "https://github.com/bighiepoh9ne/Projet-de-scoring-credit"
   }
 ];

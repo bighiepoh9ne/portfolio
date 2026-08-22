@@ -99,7 +99,7 @@ function Contact() {
                   href="www.linkedin.com/in/cephas-akikmane-allogo"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: '#00FF9C', textDecoration: 'none' }}
+                  style={{ color: '#3B82F6', textDecoration: 'none' }}
                 >
                   LinkedIn
                 </a>
@@ -107,7 +107,7 @@ function Contact() {
                   href="https://github.com/bighiepoh9ne"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: '#00FF9C', textDecoration: 'none' }}
+                  style={{ color: '#3B82F6', textDecoration: 'none' }}
                 >
                   GitHub
                 </a>
