@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { useState } from "react"
+import { useMemo, useState } from "react"
 
 function getGithubPreviewImage(url) {
   try {
@@ -21,12 +21,22 @@ const TECH_COLORS = {
   "Power BI": { bg: "#F2C811", color: "#1a1a1a" },
   DAX: { bg: "#F2C811", color: "#1a1a1a" },
   Word: { bg: "#2B579A", color: "#ffffff" },
-  Powerpoint: { bg: "#B7472A", color: "#ffffff" }
+  Powerpoint: { bg: "#B7472A", color: "#ffffff" },
+  Shiny: { bg: "#75AADB", color: "#1a1a1a" }
 }
 
 function ProjectCard({ project }) {
-  const [imgError, setImgError] = useState(false)
-  const previewImage = project.github ? getGithubPreviewImage(project.github) : null
+  const [candidateIndex, setCandidateIndex] = useState(0)
+
+  const candidates = useMemo(() => {
+    const list = []
+    if (project.image) list.push(project.image)
+    const githubPreview = project.github ? getGithubPreviewImage(project.github) : null
+    if (githubPreview) list.push(githubPreview)
+    return list
+  }, [project.image, project.github])
+
+  const previewImage = candidates[candidateIndex]
 
   return (
     <motion.div
@@ -38,13 +48,13 @@ function ProjectCard({ project }) {
     >
       {project.github && (
         <div className="project-preview">
-          {previewImage && !imgError ? (
+          {previewImage ? (
             <img
               src={previewImage}
-              alt={`Aperçu GitHub — ${project.title}`}
+              alt={`Aperçu — ${project.title}`}
               className="project-preview-img"
               loading="lazy"
-              onError={() => setImgError(true)}
+              onError={() => setCandidateIndex((i) => i + 1)}
             />
           ) : (
             <div className="project-preview-fallback">GitHub</div>
