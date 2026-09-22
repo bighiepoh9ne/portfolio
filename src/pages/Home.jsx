@@ -15,14 +15,6 @@ function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <motion.button
-          className="availability-btn"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          onClick={() => setShowModal(true)}
-        >
-          À la recherche d'un stage ou d'une alternance
-        </motion.button>
       </motion.div>
 
       <AnimatePresence>

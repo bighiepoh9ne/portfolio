@@ -53,9 +53,7 @@ function About() {
             </p>
             <p className="about-description">
               Organisé et méthodique, j'aborde chaque projet avec rigueur et créativité. 
-              Ma double culture, data science et finance d'entreprise, me pousse à explorer constamment de nouvelles techniques pour extraire le maximum de valeur des données au service de la décision financière. 
-              Je suis actuellement à la recherche d'une alternance à partir de septembre 2026 dans les domaines de l'analyse financière, 
-              du contrôle de gestion, des risques ou de la corporate finance, pour mettre en pratique mes compétences et contribuer à des projets à fort impact.
+              Ma double culture, data science et finance d'entreprise, me pousse à explorer constamment de nouvelles techniques pour extraire le maximum de valeur des données au service de la décision financière.
             </p>
             
             {showMore && (
